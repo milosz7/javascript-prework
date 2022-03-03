@@ -11,3 +11,17 @@ if (moveRandomiser == 1) {
 } else {
   computerMove = "scissors";
 }
+
+let playerInput = prompt("Enter your move! 1: rock, 2: paper, 3: scissors.");
+
+console.log("Player entered: " + playerInput);
+
+let playerMove = "unknown";
+
+if (playerInput == 1) {
+  playerMove = "rock";
+} else if (playerInput == 2) {
+  playerMove = "paper";
+} else {
+  playerMove = "scissors";
+}
