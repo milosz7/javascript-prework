@@ -22,6 +22,22 @@ if (playerInput == 1) {
   playerMove = "rock";
 } else if (playerInput == 2) {
   playerMove = "paper";
-} else {
+} else if (playerInput == 3) {
   playerMove = "scissors";
+}
+
+if (computerMove == playerMove) {
+  printMessage("It's a draw!");
+} else if (computerMove == "rock" && playerMove == "scissors") {
+  printMessage("You lose!");
+} else if (computerMove == "scissors" && playerMove == "paper") {
+  printMessage("You lose!");
+} else if (computerMove == "paper" && playerMove == "rock") {
+  printMessage("You lose!");
+} else if (computerMove == "scissors" && playerMove == "rock") {
+  printMessage("You win!");
+} else if (computerMove == "paper" && playerMove == "scissors") {
+  printMessage("You win!");
+} else {
+  printMessage("This is not a valid move!");
 }
